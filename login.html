@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Houspital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+    <script src="./JS_functions.js"></script>
+</head>
+<body>
+    <!-- 상단부 기본 설정 ~ -->
+    <div class="top"></div>
+    <section class="frame">
+        <section class="Sect_top"><div class="_top"><a class="home" href="index.html"></a></div></section>
+        <!-- ---------- ~ (<div> top ~ frame </selction>)--------------  -->
+        <section class="BG">
+            <section class="ST">
+            <form action="#">
+                <section class="Sect_login">
+                    <section class="Sect_input">
+                        <input name="id" id="id" type="text" placeholder="아이디를 입력해주세요" 
+                                onfocus="this.placeholder=''" onblur="this.placeholder='아이디를 입력해주세요'">
+                        <input name="pw" id="pw" type="password" placeholder="비밀번호를 입력해주세요"
+                                onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 입력해주세요'"> 
+                    </section>
+                    <button id="login" onclick="Login()">로그인</button>
+                    <p id="alert" class="account"> </p>
+                </section>
+            </form>
+            <a class="findD" href="findInfo_id.html">아이디 / 비밀번호 찾기</a>
+            </section>
+        </section>
+        <div class="logo"></div>
+    </section>
+</body>
+</html>

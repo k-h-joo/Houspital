@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Houspital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="findinfo_pw.css">
+
+    <script src="./JS_functions.js"></script>
+</head>
+<body>
+   <!-- 상단부 기본 설정  -->
+   <div class="top"></div>
+   <section class="frame">
+       <section class="Sect_top"><div class="_top"><a class="home" href="index.html"></a></div></section>
+       <h2>비밀번호 찾기</h2>
+       <div class="line"></div>
+       <!-- ---------- ~ (<div> top ~ frame </selction>)--------------  -->
+        <section class="ST">
+            <section class="Sect_sideBt">
+                <a class="idBt" href="./findInfo_id.html">아이디 찾기</a>
+                <a class="pwBt" href="./findinfo_pw.html">비밀번호 찾기</a>
+            </section>
+             <form class="Sect_form" action="#">
+                    <div class="inputid">
+                        <p>아이디</p>
+                        <input type="text" name="inputId" id="inputId" placeholder="아이디를 입력해주세요" 
+                        onfocus="this.placeholder=''" onblur="this.placeholder='아이디를 입력해주세요'">
+                    </div>
+                    <div class="inputNum">
+                        <p>전화번호</p>
+                       <input type="text" name="inputNum" id="inputNum" placeholder="전화번호를 입력해주세요" 
+                       onfocus="this.placeholder=''" onblur="this.placeholder='전화번호를 입력해주세요'">
+                   </div>
+                   <div class="button"><input type="submit" name="submit" id="submit" value="확인" onclick="Find_pw()"></div>
+             </form>
+        </section>
+   </section>
+</body>
+</html>

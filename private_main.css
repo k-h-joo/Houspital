@@ -1,0 +1,118 @@
+/* 기본 설정 */
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+}
+
+body {
+    background-color: white;
+}
+
+
+.frame {
+    position: absolute;
+    width: 1440px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: black; */
+}
+
+
+    /* 상단부 */
+.top {
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    background: #FFE194;
+}
+._top {
+    width: 100%;
+    height: 190px;
+    background: #FFE194;
+}
+
+.banner {
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    background: url("Pic_banner_noBar_400x150.png");
+}
+
+/*하단부*/
+.ST {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.Sect_BT {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    margin-top: 130px;
+    left: 520px;
+    /* transform: translateX(-50%); */
+}
+
+.Sect_BT> div {
+    width: 350px;
+    height: 45px;
+    margin-bottom: 30px;
+}
+
+.button {
+    position: absolute;
+    width: 300px;
+    height: 45px;
+    right: 0px;
+    background-color: #FFD840;
+    border-radius: 12px;
+
+    text-align: center;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+}
+#BT_logout {
+    position: absolute;
+    width: 240px;
+    height: 35px;
+    left: 80px;
+    background-color: #C4C4C4;
+    border-radius: 12px;
+
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    color: #6B6B6B;
+}
+.R {
+
+    display: inline-block;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    /* background-color: white;
+    border: 2px solid #FFD840; */
+    border-radius: 25px;
+}
+
+
+
+/*-------------Refactring--------------*/
+.Sect_BT> div:hover > div {
+    background-color: #FFD840;
+}

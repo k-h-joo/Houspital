@@ -1,0 +1,120 @@
+/* 기본 설정 */
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+}
+
+body {
+    background-color: white;
+}
+
+.frame {
+    position: absolute;
+    width: 1440px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: black; */
+}
+
+
+    /* 상단부 */
+.top {
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    background: #C0DDFF;
+}
+._top {
+    width: 100%;
+    height: 190px;
+    background: #C0DDFF;
+}
+
+.banner {
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    background: url("Pic_banner_noBar_400x150.png");
+}
+
+/*bottom*/
+
+.ST {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.Sect_BT {
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    margin-top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #C0DDFF;
+    border-radius: 20px;
+}
+
+.BT_login_kakao, .BT_login {
+    position: absolute;
+    width: 300px;
+    height: 45px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8DC1FF;
+    border-radius: 12px;
+
+    text-align: center;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+}
+
+.BT_login_kakao {
+    top: 85px;
+    background: url("Pic_kakao_login_medium_wide.png");
+}
+
+.BT_join {
+    position: absolute;
+    width: calc(300px*0.8);
+    height: 30px;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #C4C4C4;
+    border-radius: 10px;
+
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    color: #6B6B6B;
+}
+
+.pic {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 300px;
+    left: 100px;
+    background: url("Pic_Gurumi_default_200x200.png") no-repeat;
+    cursor: pointer;
+}
+.pic:hover {
+    background: url("Pic_Gurumi_hover200x200.png");
+}

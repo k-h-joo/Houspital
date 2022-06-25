@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Houspital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="join_hospital.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="./JS_manageInput.js"></script>
+    <script src="./JS_functions.js"></script>
+</head>
+<body>
+   <!-- 상단부 기본 설정  -->
+   <div class="top"></div>
+   <section class="frame">
+    <section class="Sect_top"><div class="_top"><a class="home" href="index.html"></a></div></section>
+       <h2>병원회원 가입</h2>
+       <div class="line"></div>
+       <!-- ---------- ~ (<div> top ~ frame </selction>)--------------  -->
+       <section class="ST">
+           <section class="Sect_sideBt">
+               <a class="privateBt" href="./join_private.html">개인회원 가입</a>
+               <a class="hospitalBt" href="./join_hospital.html">병원회원 가입</a>
+           </section>
+            <form class="Sect_form" action="#">
+                <div class="id">
+                    <p>아이디</p>
+                    <input type="text" name="id" id="id">
+                    <input type="button" name="button" id="button" value="중복 확인" onclick="confirmID()">
+                </div>
+                <div class="pw"><p>비밀번호</p><input type="text" name="pw" id="pw"></div>
+                <div class="name"><p>병원 이름</p><input type="text" name="name" id="name"></div>
+                <div class="subject">
+                    <p>진료과목</p>
+                    <select id="subject">
+                        <option value="ENT">이비인후과</option>
+                        <option value="EY">안과</option>
+                        <option value="NU">신경정신과</option>
+                        <option value="FM">가정의학과</option>
+                        <option value="UR">비뇨기과</option>
+                        <option value="MG">내과</option>
+                        <option value="OB_GY">산부인과</option>
+                        <option value="PD">소아과</option>
+                        <option value="DR">피부과</option>
+                        <option value="OS">정형외과</option>
+                    </select>
+            </div>
+                <div class="num">
+                    <p>전화번호</p>
+                    <span>
+                        <select id="area_code">
+                            <option value="02">02</option>
+                            <option value="051">051</option>
+                            <option value="053">053</option>
+                            <option value="032">032</option>
+                            <option value="062">062</option>
+                            <option value="042">042</option>
+                            <option value="052">052</option>
+                            <option value="044">044</option>
+                            <option value="031">031</option>
+                            <option value="033">033</option>
+                            <option value="043">043</option>
+                            <option value="041">041</option>
+                            <option value="063">063</option>
+                            <option value="061">061</option>
+                            <option value="054">054</option>
+                            <option value="055">055</option>
+                            <option value="064">064</option>
+                        </select>
+                        <input type="text" name="num" id="num" placeholder="숫자만 입력해주세요" maxlength="8">
+                    </span>
+                </div>
+                <div class="address">
+                    <p>주소</p>
+                    <section>
+                        <div class="add1">
+                            <input type="text" id="postcode" placeholder="우편번호">
+                            <input type="button" onclick="execDaumPostcode()" value="우편번호 찾기">
+                        </div>
+                        <div class="add2"><input type="text" id="address" placeholder="주소"></div>
+                        <div class="add3">
+                            <input type="text" id="detail" placeholder="상세주소">
+                            <input type="text" id="extra" placeholder="참고항목">
+                        </div>
+                    </section>
+                </div>
+                <div class="time">
+                    <p>진료시간</p>
+                    <div class="runningT"><input type="time" id="start"><p>~</p><input type="time" id="end"></div>
+                    <div class="lunchT">
+                        <div class="haveLT">
+                            <label for="haveLT">점심시간</label><input type="checkbox" id="haveLT">
+                        </div>
+                        <div class="inputLT">
+                            <input type="time" id="Lstart"><p>~</p><input type="time" id="Lend">
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>병원소개</p><section class="Sect_info"><textarea id="info" rows="5" cols="33"></textarea></section>
+                </div>
+                <div class="submit"><input type="submit" name="submit" id="submit" value="가입하기"></div>
+            </form>
+       </section>
+   </section>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Houspital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="join_private.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="./JS_manageInput.js"></script>
+    <script src="./JS_functions.js"></script>
+</head>
+<body>
+   <!-- 상단부 기본 설정  -->
+   <div class="top"></div>
+   <section class="frame">
+    <section class="Sect_top"><div class="_top"><a class="home" href="index.html"></a></div></section>
+       <h2>개인회원 가입</h2>
+       <div class="line"></div>
+       <!-- ---------- ~ (<div> top ~ frame </selction>)--------------  -->
+       <section class="ST">
+           <section class="Sect_sideBt">
+               <a class="privateBt" href="./join_private.html">개인회원 가입</a>
+               <a class="hospitalBt" href="./join_hospital.html">병원회원 가입</a>
+           </section>
+            <form class="Sect_form" action="/register" method="post">
+                <div class="id">
+                    <p>아이디</p>
+                    <input type="text" name="id" id="id">
+                    <input type="button" name="button" id="button" value="중복 확인" onclick="confirmID()">
+                </div>
+                <div class="pw"><p>비밀번호</p><input type="text" name="pw" id="pw"></div>
+                <div class="name"><p>이름</p><input type="text" name="name" id="name"></div>
+                <div class="date">
+                    <p>생년월일</p>
+                    <input type="text" id="year" placeholder="0000" maxlength="4">
+                    <input type="text" id="month" placeholder="00" maxlength="2">
+                    <input type="text" id="day" placeholder="00" maxlength="2">
+                </div>
+                </div>
+                <div class="num"><p>휴대폰</p><input type="text" name="num" id="num" placeholder="숫자만 입력해주세요" maxlength="11"></div>
+                <div class="address">
+                    <p>주소</p>
+                    <section>
+                        <div class="add1">
+                            <input type="text" id="postcode" placeholder="우편번호">
+                            <input type="button" onclick="execDaumPostcode()" value="우편번호 찾기">
+                        </div>
+                        <div class="add2"><input type="text" id="address" placeholder="주소"></div>
+                        <div class="add3">
+                            <input type="text" id="detail" placeholder="상세주소">
+                            <input type="text" id="extra" placeholder="참고항목">
+                        </div>
+                    </section>
+                </div>
+                <div class="physical">
+                    <div class="height"><p>키</p><input type="text" name="height" id="height"><p class="unit">cm</p></div>
+                    <div class="weight"><p>몸무게</p><input type="text" name="weight" id="weight"> <p class="unit">kg</p></div>
+                </div>
+                <div class="gender">
+                    <p>성별</p>
+                    <div class="men"><input type="radio" name="gender" id="men" value="men"><label for="men">남</label></div>
+                    <div class="wemen"><input type="radio" name="gender" id="wemen" value="wemen"><label for="wemen">여</label></div>
+                </div>
+                <div class="submit"><input type="submit" name="submit" id="submit" value="가입하기"></div>
+            </form>
+       </section>
+   </section>
+</body>
+</html>

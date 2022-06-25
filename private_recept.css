@@ -1,0 +1,233 @@
+/* 기본 설정 */
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+}
+
+body {
+    background-color: white;
+}
+
+
+.frame {
+    position: absolute;
+    width: 1440px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: green; */
+}
+
+
+/* 상단부 */
+.top {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: #FFE194;
+}
+._top {
+    width: 100%;
+    height: 150px;
+    background: #FFE194;
+}
+
+.home {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 200px;
+    height: 100px;
+    background: url("Pic_homeicon_private_200x100.png");
+}
+
+/* 페이지 제목 */
+h3 {
+position: relative;
+width: auto;
+height: auto;
+margin-top:20px;
+left: 50%;
+transform: translateX(-50%);
+
+text-align: center;
+font-size: 30px;
+line-height: 46px;
+letter-spacing: 0.1em;
+color: #FFB800;
+}
+
+.line {
+position: relative;
+width: 100%;
+height: 3px;
+margin-top: 20px;
+margin-bottom: 30px;
+background-color: #FFB800;
+}
+
+        /*상단 버튼*/
+.nav {
+    position: absolute;
+    display: flex;
+    width: 210px;
+    height: 30px;
+    right : 20px;
+    top: 58px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav> a {
+    width: 90px;
+    height: 28px;
+    border-radius: 6px;
+    background: #FFB800;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+/*Content Section*/
+.ST {
+    position: relative;
+    height: 780px;
+    width: 1200px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.part {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+h4, h5 {
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+
+    /*when*/
+#when input[type='radio'] {
+    display: none;
+}
+#when input[type='radio'] + label {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    height: 50px;
+    width: 130px;
+    margin-right: 20px;
+    background-color: #FFE194;
+    border-radius: 8px;
+
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+#when input[type='radio']:checked + label {
+    background-color: #FFB800;
+}
+
+.Rtime {
+    position: absolute;
+    display: inline-block;
+    visibility: hidden;
+    height: 50px;
+}
+.Rtime> label {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #6B6B6B;
+}
+#Rtime {
+    width: 150px;
+    height: auto;
+    border-radius: 12px;
+
+    font-size: 16px;
+    text-align: center;
+}
+#when input[type='radio']#now:checked ~ div.Rtime {
+    visibility: hidden;
+}
+#when input[type='radio']#reserve:checked ~ div.Rtime {
+    visibility: visible;
+}
+
+
+    /*symptom*/
+#symptom li {
+    display: flex;
+}
+#symptom input[type='checkbox'] {
+    display: none;
+}
+#symptom input[type='checkbox'] + label {
+    flex: 1;
+    display: inline-block;
+    height: 45px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    background-color: #FFE194;
+    border-radius: 8px;
+
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0, 0.8);
+    letter-spacing: 0.5em;
+
+    cursor: pointer;
+}
+#symptom input[type='checkbox']:checked + label {
+    background-color: #FFB800;
+}
+
+.addtional {
+    margin-left: 70px;
+    margin-top: 10px;
+}
+#text {
+    width: 300px;
+    height: 100px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+ /*submit*/
+#submit {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    border: none;
+    background-color: #FFB800;
+    cursor: pointer;
+
+    font-size: 18px;
+    line-height: 40px;
+    color: white;
+}

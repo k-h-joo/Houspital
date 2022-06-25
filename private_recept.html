@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Houspital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="private_recept.css">
+
+</head>
+<body>
+    <!-- 상단부 기본 설정 ~ -->
+    <div class="top"></div>
+   <section class="frame">
+    <section class="Sect_top">
+        <div class="_top"><a class="home" href="./private_main.html"></a></div>
+        <section class="nav">
+            <a href="#">로그아웃</a>
+            <a href="#">마이페이지</a>
+        </section>
+    </section>
+       <h3>진료 접수</h3>
+       <div class="line"></div>
+        <!-- ---------- ~ (<div> top ~ frame </selction>)--------------  -->
+            <section class="ST">
+                <form action="#">
+                    <div class="part" id="when">
+                        <input type="radio" name="when" id="now"><label for="now">지금 접수</label>
+                        <input type="radio" name="when" id="reserve"><label for="reserve">예약</label>
+                        <div class="Rtime">
+                            <label for="Rtime">예약 시간을 선택해주세요</label>
+                            <input type="time" id="Rtime">
+                        </div>
+                    </div>
+                    <div class="part" id="symptom">
+                        <h4>현재 증상을 선택해주세요</h4>
+                        <div><ul>
+                            <li>
+                                <input type="checkbox" name="symptom" id="fever" value="fever"><label for="fever">발열</label>
+                                <input type="checkbox" name="symptom" id="chills" value="chills"><label for="chills">오한</label>
+                                <input type="checkbox" name="symptom" id="headache" value="headache"><label for="headache">두통</label>
+                                <input type="checkbox" name="symptom" id="dizziness" value="dizziness"><label for="dizziness">어지러움</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="symptom" id="itching" value="itching"><label for="itching">가려움</label>
+                                <input type="checkbox" name="symptom" id="tinnitus" value="tinnitus"><label for="tinnitus">이명</label>
+                                <input type="checkbox" name="symptom" id="soreThroat" value="soreThroat"><label for="soreThroat">인후통</label>
+                                <input type="checkbox" name="symptom" id="toothache" value="toothache"><label for="toothache">치통</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="symptom" id="cough" value="cough"><label for="cough">기침</label>
+                                <input type="checkbox" name="symptom" id="phlegm" value="phlegm"><label for="phlegm">가래</label>
+                                <input type="checkbox" name="symptom" id="stomachache" value="stomachache"><label for="stomachache">복통</label>
+                                <input type="checkbox" name="symptom" id="vomiting" value="vomiting"><label for="vomiting">구토</label>
+                            </li>
+                            </ul></div>
+                        <div class="addtional">
+                            <h5>증상에 대한 설명을 적어주세요</h5>
+                            <textarea id="text" rows="5" cols="33"></textarea>
+                            <h5>증상에 대한 사진이 있으신가요?</h5>
+                            <input type="file" id="pic" accept=".jpeg, .jpg, .png, .gif">
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="접수하기">
+                </form>
+            </section>
+    </section>
+</body>
+</html>
